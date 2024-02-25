@@ -1,0 +1,70 @@
+body {
+    /* background-color: rgb(216, 177, 252); */
+}
+
+.header-container {
+    background-color: #333; /* Choose your desired background color */
+    color: white; /* Text color */
+    text-align: center; /* Center align the text */
+    padding: 20px 0; /* Add padding to the top and bottom */
+    width: 100%; /* Take full width of the screen */
+    top: 0; /* Align at the top of the screen */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-container {
+    text-align: center; /* Center align the content */
+    margin-top: 20px; /* Add some space between the header and image container */
+}
+
+.juicy-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the two columns */
+    margin-top: 20px; /* Add some space between image container and juicy content */
+}
+
+.juicy-content-about,
+.juicy-content-quality {
+    flex-basis: calc(50% - 10px); /* Each column takes up 50% width with some spacing */
+    padding: 0 5px; /* Add padding to the columns */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+.juicy-content-about img,
+.juicy-content-quality img {
+    width: 100%; /* Ensure the image takes up 100% of the container's width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Limit the maximum width to prevent image distortion */
+    display: block; /* Ensure the image is displayed as a block element */
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    text-align: center; /* Center align the text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Display as inline-block */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin between buttons */
+    transition-duration: 0.4s; /* Transition animation duration */
+    cursor: pointer; /* Cursor on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    color: white; /* White text on hover */
+}
+
+p {
+    /* Example: Set line height and color for paragraphs */
+    line-height: 1.5;
+    font-size: large;
+    color: #666;
+}
